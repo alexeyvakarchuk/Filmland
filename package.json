@@ -23,6 +23,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "start": "NODE_ENV=production node ./server/index.js",
+    "postinstall": "yarn build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
