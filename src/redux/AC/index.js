@@ -50,29 +50,38 @@ export const getFavoritesMoviesThunk = (ids) => {
   return (dispatch) => {
     const favoritesArr = [];
 
-    const mapingArr = ids.map((id) => {
+    // ids.forEach((id) => {
+
+    //   console.log(favoritesArr);
+    //   return favoritesArr;
+    // });
+
+    for (let i = 0; i < ids.length; i++) {
       const options = {
         method: "get",
         url: callApi,
         params: {
           apiKey: "9e432373",
-          i: id,
+          i: ids[i],
         },
-        transformResponse: [
-          (data) => {
-            const result = JSON.parse(data);
-            favoritesArr.push(result);
-            dispatch(getFavoritesMovies(favoritesArr));
-          },
-        ],
+        // transformResponse: [
+        //   (data) => {
+        //     const result = JSON.parse(data);
+        //     favoritesArr.push(result);
+        //     dispatch(getFavoritesMovies(favoritesArr));
+        //   },
+        // ],
       };
 
-      axios(options);
-      console.log(favoritesArr);
-      return favoritesArr;
-    });
+      axios(options).then((res) => {
+        console.log(res.data);
+        favoritesArr.push(res.data);
+      });
+    }
 
-    return favoritesArr;
+    console.log(favoritesArr);
+
+    dispatch(getFavoritesMovies(favoritesArr));
   };
 };
 
