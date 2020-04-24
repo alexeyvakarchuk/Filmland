@@ -1,23 +1,31 @@
 @font-face {
-    font-family: Barlow-Light; /* Имя шрифта */
-    src: url(Barlow-Regular.ttf); /* Путь к файлу со шрифтом */
-   }
-
-.main {
-    margin: -8px;
-
-    background-image: url('abstract-background.jpg');
-    background-position: center;
-
-    height: 850px;
-
-    display: flex;
-    flex-direction: column;
-
-    font-family: Barlow-Light;
-    letter-spacing: 2px;
-    line-height: 20px;
-    font-weight: normal
-    /* justify-content: center; */
+  font-family: Barlow-Light; /* Имя шрифта */
+  src: url("/Barlow-Regular.ttf"); /* Путь к файлу со шрифтом */
 }
 
+.main {
+  margin: -8px;
+
+  background-image: url("/abstract-background.jpg");
+  background-position: center;
+
+  height: 850px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: Barlow-Light;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-weight: normal;
+  /* justify-content: center; */
+}
+
+.icon {
+  display: block;
+}
+
+.icon svg {
+  display: block;
+  width: 100%;
+}
