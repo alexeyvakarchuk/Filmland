@@ -1,0 +1,8 @@
+export const ADD_FOUND = 'ADD_FOUND'
+export const LOAD_MOVIE = 'LOAD_MOVIE'
+export const START = '_START'
+export const SUCCESS = '_SUCCESS'
+export const LOAD_ALL_MOVIES = 'LOAD_ALL_MOVIES'
+export const ADD_TO_WATCHLIST = 'ADD_TO_WATCHLIST'
+export const DELETE_FROM_WATCHLIST = 'DELETE_FROM_WATCHLIST'
+export const GET_FAVORITES_MOVIES = 'GET_FAVORITES_MOVIES'

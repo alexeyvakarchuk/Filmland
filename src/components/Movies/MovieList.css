@@ -1,0 +1,141 @@
+.main-movie_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: rgb(29, 27, 27);
+
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    list-style-type: none;
+
+    /* rgba(209, 158, 251, 1) */
+}
+
+.main-movie {
+    width: 200px;
+    height: 400px;
+    color: rgb(218, 83, 83);
+    margin-bottom: 50px;
+    list-style: none
+}
+
+.favorites {
+    width: 20px;
+    height: auto;
+}
+
+/* .favorites__delete {
+    border: 1px solid red;
+    border-color: red
+
+} */
+
+button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+}
+
+button:active {
+    border: none;
+}
+
+.main-movie__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-movie__link span {
+    color: rgb(153, 153, 153)
+}
+
+.main-movie__poster {
+    display: flex;
+    justify-content: center;
+    height: 310px
+}
+
+.main-movie__poster img{
+    border-radius: 3%
+}
+
+.main-movie__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.main-movie__title {
+    margin: 10px;
+    margin-left: 0px;
+}
+
+/* More info movie*/
+
+.movie-more {
+    background-color: rgb(29, 27, 27);
+    height: 700px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    color: white;
+
+    border-radius: 7px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    display: flex;
+    justify-content: space-between
+}
+
+.movie-more__poster,
+.movie-more__info {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.movie-more__poster {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.movie-more__poster img {
+    border-radius: 6px;
+}
+
+.movie-more__genre {
+    font-size: 12px;
+    color: rgb(144, 144, 144)
+}
+
+.movie-more__title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.movie-more__rating-img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin-right: 10px;
+}
+
+.movie-more__rating {
+    display: flex;
+    align-items: center;
+}
+
+.movie-more__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-more__btn {
+    transform: scale(1.5)
+}
