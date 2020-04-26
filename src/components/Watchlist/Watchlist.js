@@ -15,7 +15,9 @@ class Watchlist extends React.Component {
 
     if (!loaded) return <h1>Loading...</h1>;
 
-    return <MovieList films={favoritesMovies} loaded={loaded} />;
+    return (
+      <MovieList listName="watchlist" films={favoritesMovies} loaded={loaded} />
+    );
   }
 }
 

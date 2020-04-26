@@ -6,7 +6,7 @@ import "./MovieList.css";
 
 export class MovieList extends React.Component {
   render() {
-    const { films, loaded } = this.props;
+    const { listName = "movielist", films, loaded } = this.props;
 
     if (!loaded) return <h2>Loading...</h2>;
 
@@ -15,7 +15,7 @@ export class MovieList extends React.Component {
         <div>
           <ul className="main-movie_list">
             {films.map((m) => (
-              <li key={m.imdbID}>
+              <li key={`${listName}_${m.imdbID}`}>
                 <Movie
                   title={m.Title}
                   year={m.Year}

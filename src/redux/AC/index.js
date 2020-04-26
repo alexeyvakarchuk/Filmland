@@ -47,7 +47,7 @@ export const getFavoritesMovies = (favoritesArr) => {
 };
 
 export const getFavoritesMoviesThunk = (ids) => {
-  return (dispatch) => {
+  return async (dispatch) => {
     const favoritesArr = [];
 
     // ids.forEach((id) => {
@@ -73,10 +73,14 @@ export const getFavoritesMoviesThunk = (ids) => {
         // ],
       };
 
-      axios(options).then((res) => {
-        console.log(res.data);
-        favoritesArr.push(res.data);
-      });
+      // axios(options).then((res) => {
+      //   console.log(res.data);
+      //   favoritesArr.push(res.data);
+      // });
+
+      const { data } = await axios(options);
+
+      favoritesArr.push(data);
     }
 
     console.log(favoritesArr);
